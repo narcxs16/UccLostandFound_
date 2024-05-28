@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/assets/img/ucc2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    padding: 20px 100px;
+    background: rgba(255, 166, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: #f4f4f4;
+    user-select: none;
+    margin-left: 14px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+.ion-icon-login{
+    font-size: 1.5em;
+}
+
+.wrapper{
+    position: relative;
+    width: 600px;
+    background-color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(44, 42, 42, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+ }
+ .notification-icon {
+    font-size: 3em;
+    color: #ff9900;
+    margin-bottom: 10px;
+ }
+ .wrapper .content{
+    width: 100%;
+    padding: 20px;
+ }
+ .content h2{
+    text-align: center;
+    margin-bottom: 10px;
+ }
+ .content p{
+    font-size: 1em;
+    color: #333;
+ }

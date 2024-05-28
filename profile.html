@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCC: Lost and Found</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/profile.css">
+</head>
+<body>
+
+<!--NAV BAR-->
+
+    <header>
+        <h2 class="logo-nav"></ion-icon><ion-icon name="cube" class="logo-lnd"></ion-icon> UCC:Lost & Found</h2>
+            <nav class="navigation">
+                <a href="notif.html">
+                    <ion-icon name="notifications" class="ion-icon-large"></ion-icon>
+                    <span class="toolwip">Notifications</span>
+                </a>
+                <a href="index.html">
+                    <ion-icon name="log-in" class="ion-icon-large"></ion-icon>
+                    <span class="toolwip">Log In</span>
+                </a>
+            </nav>
+        </header> 
+
+<!--SIDE BAR-->
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+            <i><ion-icon name="cube"></ion-icon></i>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="profile.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="claim.html">
+                    <i class="bx bxs-notepad"></i>
+                    <span class="nav-item">Claim</span>
+                </a>
+                <span class="tooltip">Claim Items</span>
+            </li>
+            <li>
+                <a href="sidebar.html">
+                    <i class="bx bxs-report"></i>
+                    <span class="nav-item">Report</span>
+                </a>
+                <span class="tooltip">Report Lost Items</span>
+        </ul>
+    </div>
+
+<!--MAIN CONTENT-->
+    <div class="profile-card">
+        <img src="/assets/img/user.png" alt="Profile Picture">
+        <h2>Kirby</h2>
+        <h4>User</h4>
+        <p>Name: Kirby</p>
+        <p>Course: Information Technology</p>
+        <p>Student ID: 20231234-N</p>
+    </div>
+
+
+<!--ION ICON SCRIPT-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+<!--SIDEBAR SCRIPT-->
+
+    <script>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector('.sidebar')
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+
+</html>

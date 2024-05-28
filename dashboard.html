@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCC: Lost and Found</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+</head>
+<body>
+
+<!--NAV BAR-->
+
+    <header>
+        <h2 class="logo-nav"></ion-icon><ion-icon name="cube" class="logo-lnd"></ion-icon> UCC:Lost & Found</h2>
+            <nav class="navigation">
+              <a href="notif.html">
+                <ion-icon name="notifications" class="ion-icon-large"></ion-icon>
+                <span class="toolwip">Notifications</span>
+            </a>
+            <a href="index.html">
+                <ion-icon name="log-in" class="ion-icon-large"></ion-icon>
+                <span class="toolwip">Log In</span>
+            </a>
+            </nav>
+        </header> 
+
+<!--SIDE BAR-->
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+            <i><ion-icon name="cube"></ion-icon></i>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="profile.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="claim.html">
+                    <i class="bx bxs-notepad"></i>
+                    <span class="nav-item">Claim</span>
+                </a>
+                <span class="tooltip">Claim Items</span>
+            </li>
+            <li>
+                <a href="sidebar.html">
+                    <i class="bx bxs-report"></i>
+                    <span class="nav-item">Report</span>
+                </a>
+                <span class="tooltip">Report Lost Items</span>
+        </ul>
+    </div>
+
+<!--DASHBOARD-->
+
+    <div class="card-container">
+      <div class="card">
+        <img src="/assets/img/pen.jpg" alt="1stimage">
+        <div class="card-content">
+          <h3>Black Pen</h3>
+          <p>Lost/Found by: Kirby</p>
+          <p>this is a pen a black pen</p>
+          <p>Ref No.:123</p>
+          <a href="claim.html" class="btn-card">Request Claim</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container1">
+      <div class="card1">
+        <img src="/assets/img/bag.jpg" alt="1stimage">
+        <div class="card-content1">
+            <h3>Black Bag</h3>
+            <p>Lost/Found by: Kirby</p>
+            <p>this is a pen a black pen</p>
+            <p>Ref No.:123</p>
+          <a href="claim.html" class="btn-card1">Request Claim</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container2">
+      <div class="card2">
+        <img src="assets/img/glasses.jpg" alt="1stimage">
+        <div class="card-content2">
+            <h3>Black Glasses</h3>
+            <p>Lost/Found by: Kirby</p>
+            <p>this is a pen a black pen</p>
+            <p>Ref No.:123</p>
+          <a href="claim.html" class="btn-card2">Request Claim</a>
+        </div>
+      </div>
+    </div>
+
+
+<!--ION ICON SCRIPT-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+<!--SIDEBAR SCRIPT-->
+
+    <script>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector('.sidebar')
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+
+</html>

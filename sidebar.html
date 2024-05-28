@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCC: Lost and Found</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+</head>
+<body>
+
+<!--NAV BAR-->
+
+    <header>
+        <h2 class="logo-nav"></ion-icon><ion-icon name="cube" class="logo-lnd"></ion-icon> UCC:Lost & Found</h2>
+            <nav class="navigation">
+                <a href="notif.html">
+                    <ion-icon name="notifications" class="ion-icon-large"></ion-icon>
+                    <span class="toolwip">Notifications</span>
+                </a>
+                <a href="index.html">
+                    <ion-icon name="log-in" class="ion-icon-large"></ion-icon>
+                    <span class="toolwip">Log In</span>
+                </a>
+            </nav>
+        </header> 
+
+<!--SIDE BAR-->
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+            <i><ion-icon name="cube"></ion-icon></i>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="profile.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="claim.html">
+                    <i class="bx bxs-notepad"></i>
+                    <span class="nav-item">Claim</span>
+                </a>
+                <span class="tooltip">Claim Items</span>
+            </li>
+            <li>
+                <a href="sidebar.html">
+                    <i class="bx bxs-report"></i>
+                    <span class="nav-item">Report</span>
+                </a>
+                <span class="tooltip">Report Lost Items</span>
+        </ul>
+    </div>
+
+   <!--LOST AND FOUND FILLABLE FORM-->
+
+    <div class="container">
+        <h2>Report Lost Items</h2>
+        <form id="fillable-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+      
+          <div class="form-group">
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course">
+          </div>
+      
+          <div class="form-group">
+            <label for="contacts">Contacts:</label>
+            <input type="text" id="contacts" name="contacts">
+          </div>
+
+          <div class="form-group">
+            <label for="contacts">When/Where did it lost/found:</label>
+            <input type="text" id="contacts" name="contacts">
+          </div>
+      
+          <div class="form-group">
+            <label for="item-description">Item Description:</label>
+            <textarea id="item-description" name="item-description" rows="4"></textarea>
+          </div>
+      
+          <div class="form-group">
+            <label for="item-picture">Item Picture:</label>
+            <input type="file" id="item-picture" name="item-picture" accept="image/*">
+          </div>
+      
+          <a href="dashboard.html" class="button">SUBMIT</a>
+          </div>
+        </form>
+    </div>
+
+<!--ION ICON SCRIPT-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+<!--SIDEBAR SCRIPT-->
+
+    <script>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector('.sidebar')
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    </script>
+
+</html>
